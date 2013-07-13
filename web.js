@@ -3,8 +3,9 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 // HW3.1
-var index = fs.readFileSync('index.html'); // read "index.html" from disk
-buffer.write(index); // assign to buffer 
+var fs = require('fs');
+var index = fs.readFileSync('./index.html'); // read "index.html" from disk which should return buffer
+buffer.write(index); // assign index to buffer 
 var showIndex = buf.toString(); // read from buffer
 
 // original web.js function define showIndex
