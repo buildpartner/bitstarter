@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 // HW3.1
 var fs = require('fs');
-var buf = new Buffer (fs.readFileSync('index.html')); // read "index.html" from disk which should return buffer
+var buf = new Buffer (fs.readFileSync('./index.html').toString()); // read "index.html" from disk which should return buffer
 buffer.write(buf); // assign var buf to buffer 
 var showIndex = buf.toString(); // read from buffer
 
