@@ -26,6 +26,9 @@ var program = require('commander');
 var cheerio = require('cheerio');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
+var sys = require('util'); 
+var rest = require('restler');
+var URL_DEFAULT = "http://salty-earth-2427.herokuapp.com/";
 
 // input html file
 var assertFileExists = function(infile) {
