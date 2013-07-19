@@ -30,52 +30,32 @@ var sys = require('util');
 var rest = require('restler');
 var URL_DEFAULT = "http://salty-earth-2427.herokuapp.com/";
 
-// input html file
+
+  var callThis = function(result) {
+if (data instanceof Error) {
+    sys.puts('Error: ' + result.message);
+    this.retry(5000); // try again after 5 sec
+  } else {
+    sys.puts(result);
+  }
+};
+
 var assertFileExists = function(infile) {
     var instr = infile.toString();
     if(!fs.existsSync(instr)) {
         console.log("%s does not exist. Exiting.", instr);
         process.exit(1); // http://nodejs.org/api/process.html#process_process_exit_code
     }
+var clone = function(fn) {
+    // Workaround for commander.js issue.
+    // http://stackoverflow.com/a/6772648
+    return fn.bind({});
+};  
     return instr;
 };
 
-// input hardcode http
-rest.get('http://salty-earth-2427.herokuapp.com/').on('complete', function(result) {
-  if (result instanceof Error) {
-    sys.puts('Error: ' + result.message);
-    this.retry(5000); // try again after 5 sec
-  } else {
-    sys.puts(result);
-  }
-});
 
-// above needs changing to work
 
-var callback = function(urlsourcecontent) {
-   var checkJson = checkHtmlFile(urlsourcecontent, program.checks);
-};
-
-if(require.main == module) {
-    program
-        .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
-        .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
-	.option('-u, --url <myUrl>','Path to external url', clone(assertUrlExists), URL_DEFAULT)
-        .parse(process.argv);
-    if(program.url) {
-      rest.get(program.url).on('complete', callback);
-    }
-    else if (program.file) {
-      var checkJson = checkHtmlFile(program.file, program.checks);
-    }
-    else {
-      console.log("Please present a file or an url as parameter.");
-    }
-    var outJson = JSON.stringify(checkJson, null, 4);
-    console.log(outJson);
-} else {
-    exports.checkHtmlFile = checkHtmlFile;
-}
 
 var cheerioHtmlFile = function(htmlfile) {
     return cheerio.load(fs.readFileSync(htmlfile));
@@ -96,21 +76,23 @@ var checkHtmlFile = function(htmlfile, checksfile) {
     return out;
 };
 
-var clone = function(fn) {
-    // Workaround for commander.js issue.
-    // http://stackoverflow.com/a/6772648
-    return fn.bind({});
-};
-
 if(require.main == module) {
     program
-        .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
-	.option('-u, --url','Path to external url')
-        .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
+        .option('-c, --checks <check_file>', 'checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
+        .option('-f, --file ', 'index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
+        .option('-u, --url <url>', 'url to check', clone(assertUrlExists), URL_DEFAULT)
         .parse(process.argv);
-    var checkJson = checkHtmlFile(program.file, program.checks);
-    var outJson = JSON.stringify(checkJson, null, 4);
-    console.log(outJson);
+if (program.url) {
+    rest.get(program.url).on('complete', function(result) {
+      fs.writeFileSync("index.html", result);   // Added this line
+      var checkJson = checkHtmlFile("index.html", program.checks);
+      var outJson = JSON.stringify(checkJson, null, 4);
+      console.log(outJson);
+    });
 } else {
-    exports.checkHtmlFile = checkHtmlFile;
+  var checkJson = checkHtmlFile(result, program.checks);
+  var outJson = JSON.stringify(checkJson, null, 4);
+  var assertUrlExists = function(val){    return val.toString();}
+  console.log(outJson);
+}
 }
