@@ -49,11 +49,11 @@ var assertFileExists = function(infile) {
     return instr;
 };
 
-var clone = function(fn) {
+// var clone = function(fn) {
     // Workaround for commander.js issue.
     // http://stackoverflow.com/a/6772648
-    return fn.bind({});
-};  
+//    return fn.bind({});
+// };  
 
 
 var cheerioHtmlFile = function(htmlfile) {
