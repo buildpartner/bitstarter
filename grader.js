@@ -29,7 +29,7 @@ var CHECKSFILE_DEFAULT = "checks.json";
 var sys = require('util'); 
 var rest = require('restler');
 var URL_DEFAULT = "http://salty-earth-2427.herokuapp.com/";
-
+var assertUrlExists = function (val) {return val.toString();};
 
   var callThis = function(result) {
 if (data instanceof Error) {
@@ -38,6 +38,12 @@ if (data instanceof Error) {
   } else {
     sys.puts(result);
   }
+};
+
+var clone = function(fn) {                                                                                                                 
+    // Workaround for commander.js issue.                                                                                                    
+    // http://stackoverflow.com/a/6772648                                                                                                    
+    return fn.bind({});                                                                                                                   
 };
 
 var assertFileExists = function(infile) {
