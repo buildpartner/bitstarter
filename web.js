@@ -12,7 +12,7 @@ var showIndex = buf.toString(); // read from buffer
 app.get('/', function(request, response) {
   response.send(showIndex);
 });
-
+app.use(express.static(__dirname));
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
