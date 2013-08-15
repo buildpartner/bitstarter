@@ -10,6 +10,7 @@ var async   = require('async')
 var app = express();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+app.use(express.static(__dirname+'/images'));
 app.set('port', process.env.PORT || 8080);
 
 // Render homepage (note trailing slash): example.com/
