@@ -109,6 +109,10 @@
       .asset {
         padding: 2.5% 0%;
       }
+      .well p {
+      font-size: 16px;
+      text-align: center;
+      }
       .footer {
         color: #cccccc;
         text-align: center;
@@ -172,8 +176,10 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#pay">Preorder</a></li>
               <li><a href="/orders">Orders</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#faq">FAQ</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -241,18 +247,10 @@
           </div>
           <div class="row-fluid">
            <div class="span6 offset3 order">
-	    <!-- Standard Coinbase 1 BTC Preorder button. -->
-            <!-- old Bootstrap http://twitter.github.io/bootstrap/base-css.html#buttons -->
-	    <a class="coinbase-button" data-code="17ed995128082f0ecd8e639ac08b1744" data-button-style="custom_large" data-button-text="Preorder with Bitcoin" href="https://coinbase.com/checkouts/17ed995128082f0ecd8e639ac08b1744">Preorder With Bitcoin</a>
-	    <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-	    <!-- Selectable Coinbase BTC Donation button. -->
-	    <div id="bitcoin_order">
-	    <a class="coinbase-button" data-code="6556494e37bc102b574ed47ab1aa8dae" data-button-style="custom_large" data-button-text="Donate with Bitcoin" href="https://coinbase.com/checkouts/6556494e37bc102b574ed47ab1aa8dae">Pay With Bitcoin</a>
-	    <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-	    </div>
-	    <div id="paypal_order">
-	      <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="donate" data-size="large" data-name="Dashscape Donation" data-currency_code="AUD" data-amount="20.00"></script>
-	    </div>
+	     <p>
+               <a href="#pay" class="btn btn-primary btn-lg">Donate</a>
+	       <a href="#pay" class="btn btn-primary btn-lg">Preorder</a>
+	     </p>
            </div>
           </div>
           <div class="row-fluid">
@@ -342,11 +340,116 @@
           <img class="img-polaroid" alt="Dashboard" src="dashboard_Base3.gif">
         </div>
       </div>
-
+      <!-- Donation and Preoder for Coinbase and PayPal section. -->
+	<div class="row-fluid pay" id="pay">
+	    <div class="well">
+	          <h4>Just say thanks</h4>
+		      <h5>Donate any amount of BTC or A$20</h5>
+		<div>
+		  <!-- Selectable Coinbase BTC Donation button. -->
+		  <div id="bitcoin_order">
+		    <a class="coinbase-button" data-code="6556494e37bc102b574ed47ab1aa8dae" data-button-style="custom_large" data-button-text="Donate with Bitcoin" href="https://coinbase.com/checkouts/6556494e37bc102b574ed47ab1aa8dae">Pay With Bitcoin</a>
+		    <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+		  </div>
+		  <!-- PayPal A$20 Donation button. -->
+		  <div id="paypal_order">
+		    <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="donate" data-size="large" data-name="Dashscape Donation" data-currency_code="AUD" data-amount="20.00"></script>
+	          </div>
+		</div>
+	    </div>
+	    <div class="row-fluid">
+	        <p class="well"><span class="badge badge-important">Important!</span> Preorder your product from the selection below</p>
+	    </div>
+	    <div class="row-fluid">
+	      <div class="span3">
+		<div class="well">
+		   <h4>Supporter</h4>
+			<div class="badge">500 available
+			</div>
+			  <h5>Preorder A$100 or 1 BTC</h5>
+				<p style="min-height:160px">Thank you, on web site
+				            Early Preview of our releases<br>
+				</p>
+				  <div>
+				    <!-- Tier 1 Supporter Coinbase 1 BTC Preorder button. -->
+				    <a class="coinbase-button" data-code="17ed995128082f0ecd8e639ac08b1744" data-button-style="custom_large" data-button-text="Preorder with Bitcoin" href="https://coinbase.com/checkouts/17ed995128082f0ecd8e639ac08b1744">Preorder With Bitcoin</a>
+				    <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+				    <!-- Tier 1 Supporter PayPal A$100 Preorder button. -->
+				    <div id="paypal_order">
+				      <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="100.00"></script>
+				    </div>
+				  </div>
+			  </div>
+		 </div>
+	      <div class="span3">
+		  <div class="well">
+		     <h4>Contributor</h4>
+			<div class="badge">200 available
+			</div>
+			   <h5>Preorder A$500 or 5 BTC</h5>
+				<p style="min-height:160px">Early access to the beta<br>
+				    1 month cloud hosted<br>
+				</p>
+				 <div>
+				   <!-- Tier 2 Contributor Coinbase 5 BTC Preorder button. -->
+				   <a class="coinbase-button" data-code="21d3500ffb2fa9c8e5497dd33b553e90" data-button-style="custom_large" data-button-text="Preorder with Bitcoin" href="https://coinbase.com/checkouts/21d3500ffb2fa9c8e5497dd33b553e90">Pay With Bitcoin</a>
+				   <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+				   <!-- Tier 2 Contributor PayPal A$500 Preorder button. -->
+				   <div id="paypal_order">
+				     <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="500.00"></script>
+				   </div>
+				 </div>
+		  </div>
+	  </div>
+	<div class="span3">
+	  <div class="well">
+		<h4>Partner</h4>
+			<div class="badge">20 available
+			</div>
+			    <h5>Preorder A$1,000 or 10 BTC</h5>
+				<p style="min-height:160px">
+				  1 month cloud hosted<br>
+				  Business ecosystem Plugin partner<br>
+				  Work with you to incorporate your software API<br>
+				  Marketing partner promotion on web site<br>
+				</p>
+				<div>
+				  <!-- Tier 3 Partner Coinbase 10 BTC Preorder button. -->
+				  <a class="coinbase-button" data-code="c2282dd547879265057ec3686b6b6877" data-button-style="custom_large" href="https://coinbase.com/checkouts/c2282dd547879265057ec3686b6b6877">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+				  <!-- Tier 3 Partner PayPal A$1,000 Preorder button. -->
+				  <div id="paypal_order">
+				    <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="1000.00"></script>
+				  </div>
+				</div>
+	  </div>
+	</div>
+	<div class="span3">
+	  <div class="well">
+	    <h4>Angel</h4>
+	    <div class="badge badge-important">5 available
+	    </div>
+	    <h5>Preorder A$5,000 or 25 BTC</h5>
+	    <p style="min-height:160px">
+	      Early access to the beta<br>
+	      3 months fully integrated cloud hosted<br>
+	      Premium marketing partner promotion on web site and at events<br>
+	    </p>
+	    <div>
+            <!-- Tier 4 Angel Coinbase 50 BTC Preorder button. -->
+	    <a class="coinbase-button" data-code="81a4d107f552799316c7f03efd59d5c8" data-button-style="custom_large" href="https://coinbase.com/checkouts/81a4d107f552799316c7f03efd59d5c8">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+            <!-- Tier 4 Angel PayPal A$5,000 Preorder button. -->
+             <div id="paypal_order">
+              <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="5000.00"></script>
+	     </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+</div>
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
+      <div class="row-fluid faq" id="faq">
           <div class="span10 offset1">
             <h3>FAQ</h3>
             <div class="accordion" id="accordion2">
