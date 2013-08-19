@@ -163,195 +163,195 @@
 	js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
 	fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-    <!-- Mobile-friendly navbar adopted from example. -->
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
+      <!-- Mobile-friendly navbar adopted from example. -->
+      <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar"
                   data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">dashscape</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#pay">Preorder</a></li>
-              <li><a href="/orders">Orders</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">dashscape</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#pay">Preorder</a></li>
+		<li><a href="/orders">Orders</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+	</div>
       </div>
-    </div>
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
-    <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>dashscape</h1>
-        </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Eliminate complexity and minimise cost with single pane hybrid cloud management.</p>
-        </div>
-      </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" alt="Dashboard" src="dashboard_Base.gif">
-        </div>
-
-        <!-- new We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="row-fluid">
-          <div class="span8 offset2">
-            <div class="row-fluid statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>0</h3> <p>backers</p>
-                </div>
+      <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+      <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+      <!-- http://stackoverflow.com/a/12270322 -->
+      <div class="container">
+	<!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+	<!-- www.google.com/fonts/specimen/Ubuntu -->
+	<!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+	<div class="row-fluid heading">
+          <div class="span12">
+            <h1>dashscape</h1>
+          </div>
+	</div> 
+	<div class="row-fluid subheading">
+          <div class="span12">
+            <!-- Special typography from Bootstrap for lead paragraph. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+            <p class="lead">Eliminate complexity and minimise cost with single pane hybrid cloud management.</p>
+          </div>
+	</div>
+	<div class="row-fluid pitch">
+          <div class="span5 offset1 video">
+            <img class="img-polaroid" alt="Dashboard" src="dashboard_Base.gif">
+          </div>
+	  
+          <!-- new We define a new 'actions' div to contain statistics, order, and share buttons.-->
+          <div class="span5 actions">
+            <div class="row-fluid">
+              <div class="span8 offset2">
+		<div class="row-fluid statistics">
+		  <div class="span4">
+                    <!-- linediv-l and linediv-r give dividing lines that look
+			 different in horizontal and vertical layouts, illustrating
+			 media queries. -->
+                    <div class="linediv-l">
+                      <h3>0</h3> <p>backers</p>
+                    </div>
+		  </div>
+		  <div class="span4">
+                    <div class="linediv-c">
+                      <h3>$0</h3> <p>of $50,000</p>
+                    </div>
+		  </div>
+		  <div class="span4">
+                    <div class="linediv-r">
+                      <h3>90</h3> <p>days left</p>
+                    </div>
+		  </div>
+		</div>
               </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$0</h3> <p>of $50,000</p>
-                </div>
+              <div class="row-fluid">
+		<div class="span10 offset1">
+		  <!-- Bootstrap progress bar -->
+		  <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+		  <div class="thermometer progress active">
+		    <div class="bar bar-success" style="width: 0%;"></div>
+		    <div class="bar bar-warning" style="width: 100%;"></div>
+		  </div>
+		</div>
               </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>90</h3> <p>days left</p>
-                </div>
+              <div class="row-fluid">
+		<div class="span6 offset3 order">
+		  <p>
+		    <a href="#pay" class="btn btn-primary btn-lg">Donate</a>
+		    <a href="#pay" class="btn btn-primary btn-lg">Preorder</a>
+		  </p>
+		</div>
+              </div>
+              <div class="row-fluid">
+		<div class="span8 offset2 social">
+		  <!-- AddThis Button BEGIN -->
+		  <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		    <a class="addthis_button_preferred_1"></a>
+		    <a class="addthis_button_preferred_2"></a>
+		    <a class="addthis_button_compact"></a>
+		    <a class="addthis_counter addthis_bubble_style"></a>
+		  </div>
+		  <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fa521456a0f48b"></script>
+		  <!-- AddThis Button END -->
+		</div>
+              </div>
+              <!-- Social follow button layout. -->
+	      <div id="social">
+		<div class="row-fluid">
+		  <div class="span12">
+		    <center>
+	              <ul class="social-buttons">
+			<li>
+			  <!-- Standard Twitter Follow button. -->
+			  <a href="https://twitter.com/dashscape" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @dashscape</a>
+			  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</li>
+    			<li>
+			  <!-- Standard LinkedIn Follow button. -->
+			  <script src="//platform.linkedin.com/in.js" type="text/javascript">
+			    lang: en_US
+			  </script>
+			  <script type="IN/FollowCompany" data-id="2859973" data-counter="none"></script>
+			</li>
+			<li>
+			  <!-- Small JavaScript FaceBook Like button. -->
+			  <div class="fb-like" data-href="http://www.dashscape.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+			</li>
+		      </ul>
+		    </center>
+		  </div>
+		</div>
               </div>
             </div>
           </div>
-          <div class="row-fluid">
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 0%;"></div>
-              <div class="bar bar-warning" style="width: 100%;"></div>
-            </div>
-          </div>
-          </div>
-          <div class="row-fluid">
-           <div class="span6 offset3 order">
-	     <p>
-               <a href="#pay" class="btn btn-primary btn-lg">Donate</a>
-	       <a href="#pay" class="btn btn-primary btn-lg">Preorder</a>
-	     </p>
-           </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span8 offset2 social">
-	    <!-- AddThis Button BEGIN -->
-	    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-	      <a class="addthis_button_preferred_1"></a>
-	      <a class="addthis_button_preferred_2"></a>
-	      <a class="addthis_button_compact"></a>
-	      <a class="addthis_counter addthis_bubble_style"></a>
-	    </div>
-	     <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-	     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fa521456a0f48b"></script>
-	    <!-- AddThis Button END -->
-          </div>
-          </div>
-            <!-- Social follow button layout. -->
-	    <div id="social">
-	      <div class="row-fluid">
-		<div class="span12">
-		 <center>
-	          <ul class="social-buttons">
-		    <li>
-		      <!-- Standard Twitter Follow button. -->
-		      <a href="https://twitter.com/dashscape" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @dashscape</a>
-		      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	            </li>
-    	            <li>
-		      <!-- Standard LinkedIn Follow button. -->
-		      <script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-		      </script>
-		      <script type="IN/FollowCompany" data-id="2859973" data-counter="none"></script>
-                    </li>
-                    <li>
-			<!-- Small JavaScript FaceBook Like button. -->
-			<div class="fb-like" data-href="http://www.dashscape.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
-                    </li>
-		  </ul>
-		 </center>
-              </div>
-            </div>
-          </div>
-         </div>
-        </div>
-      </div>
+	</div>
 
 
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" alt="Dashboard" src="dashboard_Base2.gif">
-        </div>
-        <div class="span5 copy">
-          <p>
-            A pleasant User Experience modular cloud interface, based on HTML5 and Bootstrap 3 with plugins for open source and commercial tools.
-	    Open Source single pane visualisation platform with modular plugins for:
-	    <ul>
-	     <li> OpenStack Horizon</li>
-	     <li> OpenStack Keystone</li>
-	     <li> Rackspace Cloud Control Panel</li>
-	     <li> Ansible</li>
-	     <li> More...</li>
-	    </ul>
-         </p>
-        </div>
-      </div>
+	<!-- Beyond this part the marketing copy begins. -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+	<!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+	<!-- http://placehold.it -->
+	<div class="row-fluid section1">
+          <div class="span5 offset1 asset">
+            <img class="img-polaroid" alt="Dashboard" src="dashboard_Base2.gif">
+          </div>
+          <div class="span5 copy">
+            <p>
+              A pleasant User Experience modular cloud interface, based on HTML5 and Bootstrap 3 with plugins for open source and commercial tools.
+	      Open Source single pane visualisation platform with modular plugins for:
+	      <ul>
+		<li> OpenStack Horizon</li>
+		<li> OpenStack Keystone</li>
+		<li> Rackspace Cloud Control Panel</li>
+		<li> Ansible</li>
+		<li> More...</li>
+	      </ul>
+            </p>
+          </div>
+	</div>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-	    Enable hybrid cloud delivery, leveraging open source cloud software and tools:
-	    <ul>
-             <li> Monitor & manage Private, Public & Hybrid Cloud from anywhere</li>
-             <li> It just works. Easy, clear & uncomplicated</li>
-	     <li> Open Source platform integrates modularly with your needs</li>
-             <li> Give access level to whom you need - SysAdmin, Dev, Users</li>
-             <li> Designed for non-technical business users & efficient operations</li>
-	     <li> Much more...</li>
-	    </ul>
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" alt="Dashboard" src="dashboard_Base3.gif">
-        </div>
-      </div>
+	<div class="row-fluid section2">
+          <div class="span5 offset1 copy copy-right">
+            <p>
+	      Enable hybrid cloud delivery, leveraging open source cloud software and tools:
+	      <ul>
+		<li> Monitor & manage Private, Public & Hybrid Cloud from anywhere</li>
+		<li> It just works. Easy, clear & uncomplicated</li>
+		<li> Open Source platform integrates modularly with your needs</li>
+		<li> Give access level to whom you need - SysAdmin, Dev, Users</li>
+		<li> Designed for non-technical business users & efficient operations</li>
+		<li> Much more...</li>
+	      </ul>
+            </p>
+          </div>
+          <div class="span5 asset">
+            <img class="img-polaroid" alt="Dashboard" src="dashboard_Base3.gif">
+          </div>
+	</div>
 
-      <!-- Donation and Preorder for Coinbase and PayPal section. -->
-    <div class="container">
-	<div class="row-fluid pay" id="pay">
-	  <div class="span6 offset3">
-	    <div class="well">
-	      <h4 class="text-center">Just say thanks</h4>
-		 <h5 class="text-center">Donate any amount of BTC or A$20</h5>
-	      	<div>
+	<!-- Donation and Preorder for Coinbase and PayPal section. -->
+	<div class="container">
+	  <div class="row-fluid pay" id="pay">
+	    <div class="span6 offset3">
+	      <div class="well">
+		<h4 class="text-center">Just say thanks</h4>
+		<h5 class="text-center">Donate any amount of BTC or A$20</h5>
+	     	<div>
 		  <!-- Selectable Coinbase BTC Donation button. -->
 		  <div id="bitcoin_order">
 		    <a class="coinbase-button" data-code="6556494e37bc102b574ed47ab1aa8dae" data-button-style="custom_small" data-button-text="Donate with Bitcoin" href="https://coinbase.com/checkouts/6556494e37bc102b574ed47ab1aa8dae">Pay With Bitcoin</a>
@@ -362,131 +362,131 @@
 		    <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="donate" data-size="large" data-name="Dashscape Donation" data-currency_code="AUD" data-amount="20.00"></script>
 	          </div>
 		</div>
-             </div>
+              </div>
 	    </div>
-         </div>
-     </div>
-    <div class="container">
-      <div class="row-fluid">
-          <div class="span6 offset3">
-            <div class="well"
-	        <p class="text-center"><span class="badge badge-important">Important!</span> Preorder your product from the selection below</p>
+	  </div>
+	</div>
+	<div class="container">
+	  <div class="row-fluid">
+            <div class="span6 offset3">
+              <div class="well"
+	           <p class="text-center"><span class="badge badge-important">Important!</span> Preorder your product from the selection below</p>
 	    </div>
           </div>
-      </div>
-    </div>
-    <div class="container">
-	    <div class="row-fluid">
-	      <div class="span3">
-		<div class="well">
-                  <h4 class="text-center">Supporter</h4>
-		  <div class="row-fluid">
-		    <div class="span6 offset3">
-		      <div class="badge badge-success">500 available
-                      </div>                
-		    </div>
-		  </div>
-		  <h5 class="text-center">Preorder A$100 or 1 BTC</h5>
-				<p style="min-height:160px">Thank you, on web site
-				            Early Preview of our releases<br>
-				</p>
-				  <div>
-				    <!-- Tier 1 Supporter Coinbase 1 BTC Preorder button. -->
-				        <div id="bitcoin_order">
-					  <a class="coinbase-button" data-code="17ed995128082f0ecd8e639ac08b1744" data-button-style="custom_small" data-button-text="Pay with Bitcoin" href="https://coinbase.com/checkouts/17ed995128082f0ecd8e639ac08b1744">Preorder With Bitcoin</a>
-					  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-					</div>
-				    <!-- Tier 1 Supporter PayPal A$100 Preorder button. -->
-				    <div id="paypal_order">
-				      <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="100.00"></script>
-				    </div>
-				  </div>
-			  </div>
-		 </div>
-	      <div class="span3">
-		  <div class="well">
-		     <h4 class="text-center">Contributor</h4>
-                  <div class="row-fluid">
-                    <div class="span6 offset3">
-			<div class="badge badge-success">200 available
-			</div>
-                    </div>
-                  </div>
-			   <h5 class="text-center">Preorder A$500 or 5 BTC</h5>
-				<p style="min-height:160px">Early access to the beta<br>
-				    1 month cloud hosted<br>
-				</p>
-				 <div>
-                                       <div id="bitcoin_order">
-					 <!-- Tier 2 Contributor Coinbase 5 BTC Preorder button. -->
-					 <a class="coinbase-button" data-code="21d3500ffb2fa9c8e5497dd33b553e90" data-button-style="custom_small" data-button-text="Pay with Bitcoin" href="https://coinbase.com/checkouts/21d3500ffb2fa9c8e5497dd33b553e90">Pay With Bitcoin</a>
-				   <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-				       </div>
-				   <!-- Tier 2 Contributor PayPal A$500 Preorder button. -->
-				   <div id="paypal_order">
-				     <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="500.00"></script>
-				   </div>
-				 </div>
-		  </div>
-	  </div>
-	<div class="span3">
-	  <div class="well">
-		<h4 class="text-center">Partner</h4>
-                  <div class="row-fluid">
-                    <div class="span6 offset3">
-			<div class="badge badge-success">20 available
-			</div>
-                    </div>
-                  </div>
-			    <h5 class="text-center">Preorder A$1,000 or 10 BTC</h5>
-				<p style="min-height:160px">
-				  1 month cloud hosted<br>
-				  Business ecosystem Plugin partner<br>
-				  Incorporate your API<br>
-				  Marketing partnership<br>
-				</p>
-				<div>
-                                       <div id="bitcoin_order">
-					 <!-- Tier 3 Partner Coinbase 10 BTC Preorder button. -->
-					 <a class="coinbase-button" data-code="c2282dd547879265057ec3686b6b6877" data-button-style="custom_small" href="https://coinbase.com/checkouts/c2282dd547879265057ec3686b6b6877">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-                                       </div>
-				  <!-- Tier 3 Partner PayPal A$1,000 Preorder button. -->
-				  <div id="paypal_order">
-				    <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="1000.00"></script>
-				  </div>
-				</div>
-	  </div>
 	</div>
-	<div class="span3">
-	  <div class="well">
-	    <h4 class="text-center">Angel</h4>
-                  <div class="row-fluid">
-                    <div class="span6 offset4">
-		      <div class="badge badge-success">5 available
-		      </div>
-		      <h5>Preorder A$5,000 or 25 BTC</h5>
-                    </div>
-                  </div>
-	    <p style="min-height:160px">
-	      Early access to Dashboard beta<br>
-	      3 months fully integrated cloud hosted<br>
-	      Premium marketing partnership<br>
-	    </p>
-	    <div>
-            <!-- Tier 4 Angel Coinbase 50 BTC Preorder button. -->
-                                       <div id="bitcoin_order">
-					 <a class="coinbase-button" data-code="81a4d107f552799316c7f03efd59d5c8" data-button-style="custom_small" href="https://coinbase.com/checkouts/81a4d107f552799316c7f03efd59d5c8">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-				       </div>
-            <!-- Tier 4 Angel PayPal A$5,000 Preorder button. -->
-             <div id="paypal_order">
-              <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="5000.00"></script>
-	     </div>
+      </div>
+      <div class="container">
+	<div class="row-fluid">
+	  <div class="span3">
+	    <div class="well">
+              <h4 class="text-center">Supporter</h4>
+	      <div class="row-fluid">
+		<div class="span6 offset3">
+		  <div class="badge badge-success">500 available
+                  </div>                
+		</div>
+	      </div>
+	      <h5 class="text-center">Preorder A$100 or 1 BTC</h5>
+	      <p style="min-height:160px">Thank you, on web site
+		Early Preview of our releases<br>
+	      </p>
+	      <div>
+		<!-- Tier 1 Supporter Coinbase 1 BTC Preorder button. -->
+		<div id="bitcoin_order">
+		  <a class="coinbase-button" data-code="17ed995128082f0ecd8e639ac08b1744" data-button-style="custom_small" data-button-text="Pay with Bitcoin" href="https://coinbase.com/checkouts/17ed995128082f0ecd8e639ac08b1744">Preorder With Bitcoin</a>
+		  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+		</div>
+		<!-- Tier 1 Supporter PayPal A$100 Preorder button. -->
+		<div id="paypal_order">
+		  <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="100.00"></script>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="span3">
+	    <div class="well">
+	      <h4 class="text-center">Contributor</h4>
+              <div class="row-fluid">
+                <div class="span6 offset3">
+		  <div class="badge badge-success">200 available
+		  </div>
+                </div>
+              </div>
+	      <h5 class="text-center">Preorder A$500 or 5 BTC</h5>
+	      <p style="min-height:160px">Early access to the beta<br>
+		1 month cloud hosted<br>
+	      </p>
+	      <div>
+                <div id="bitcoin_order">
+		  <!-- Tier 2 Contributor Coinbase 5 BTC Preorder button. -->
+		  <a class="coinbase-button" data-code="21d3500ffb2fa9c8e5497dd33b553e90" data-button-style="custom_small" data-button-text="Pay with Bitcoin" href="https://coinbase.com/checkouts/21d3500ffb2fa9c8e5497dd33b553e90">Pay With Bitcoin</a>
+		  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+		</div>
+		<!-- Tier 2 Contributor PayPal A$500 Preorder button. -->
+		<div id="paypal_order">
+		  <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="500.00"></script>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="span3">
+	    <div class="well">
+	      <h4 class="text-center">Partner</h4>
+              <div class="row-fluid">
+                <div class="span6 offset3">
+		  <div class="badge badge-success">20 available
+		  </div>
+                </div>
+              </div>
+	      <h5 class="text-center">Preorder A$1,000 or 10 BTC</h5>
+	      <p style="min-height:160px">
+		1 month cloud hosted<br>
+		Business ecosystem Plugin partner<br>
+		Incorporate your API<br>
+		Marketing partnership<br>
+	      </p>
+	      <div>
+                <div id="bitcoin_order">
+		  <!-- Tier 3 Partner Coinbase 10 BTC Preorder button. -->
+		  <a class="coinbase-button" data-code="c2282dd547879265057ec3686b6b6877" data-button-style="custom_small" href="https://coinbase.com/checkouts/c2282dd547879265057ec3686b6b6877">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+                </div>
+		<!-- Tier 3 Partner PayPal A$1,000 Preorder button. -->
+		<div id="paypal_order">
+		  <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="1000.00"></script>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="span3">
+	    <div class="well">
+	      <h4 class="text-center">Angel</h4>
+              <div class="row-fluid">
+                <div class="span6 offset4">
+		  <div class="badge badge-success">5 available
+		  </div>
+		  <h5>Preorder A$5,000 or 25 BTC</h5>
+                </div>
+              </div>
+	      <p style="min-height:160px">
+		Early access to Dashboard beta<br>
+		3 months fully integrated cloud hosted<br>
+		Premium marketing partnership<br>
+	      </p>
+	      <div>
+		<!-- Tier 4 Angel Coinbase 50 BTC Preorder button. -->
+                <div id="bitcoin_order">
+		  <a class="coinbase-button" data-code="81a4d107f552799316c7f03efd59d5c8" data-button-style="custom_small" href="https://coinbase.com/checkouts/81a4d107f552799316c7f03efd59d5c8">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+		</div>
+		<!-- Tier 4 Angel PayPal A$5,000 Preorder button. -->
+		<div id="paypal_order">
+		  <script src="paypal-button.min.js?merchant=VHCMGV3EUGA6L" data-button="buynow" data-size="large" data-name="Preorder with PayPal" data-currency_code="AUD" data-amount="5000.00"></script>
+		</div>
+	      </div>
 	    </div>
 	  </div>
 	</div>
       </div>
-    </div>
-  </div> 
+ 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
