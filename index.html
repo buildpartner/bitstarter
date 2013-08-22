@@ -51,6 +51,7 @@
       .heading, .subheading {
        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
        text-align: center;
+       font-size: 48px;
       }
       p.lead {
         padding-top: 1.5%;
@@ -181,8 +182,9 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
       <!-- Mobile-friendly navbar adopted from example. -->
       <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
+	  <div class="navbar-header">
             <button type="button" class="btn-default btn-navbar"
                   data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -190,8 +192,9 @@
               <span class="icon-bar"></span>
             </button>
             <a class="brand" href="#">Dashscape</a>
+	  </div>
             <div class="nav-collapse collapse">
-              <ul class="nav">
+              <ul class="nav navbar-nav">
 		<li class="active"><a href="#">Home</a></li>
 		<li><a href="#pay">Preorder</a></li>
 		<li><a href="/orders">Orders</a></li>
@@ -251,7 +254,7 @@
 		  </div>
 		  <div class="col-lg-4">
                     <div class="linediv-c">
-                      <h3>$0</h3> <p>of $50,000</p>
+                      <h3>$0</h3> <p>of AUD50,000 / 500BTC</p>
                     </div>
 		  </div>
 		  <div class="col-lg-4">
@@ -265,9 +268,9 @@
 		<div class="col-lg-10 col-lg-offset-1">
 		  <!-- Bootstrap progress bar -->
 		  <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-		  <div class="thermometer progress active">
-		    <div class="bar bar-success" style="width: 0%;"></div>
-		    <div class="bar bar-warning" style="width: 100%;"></div>
+		  <div class="progress active">
+		    <div class="progess-bar bar-success" style="width: 0%;"></div>
+		    <div class="progress-bar bar-warning" style="width: 100%;"></div>
 		  </div>
 		</div>
               </div>
@@ -401,8 +404,8 @@
 	    <div class="col-lg-8 col-lg-offset-2">
 	      <div class="well"
 		   <div class="row">
-		     <div class="col-lg-9 col-lg-offset-1">
-	               <p><span class="badge badge-success">Important!</span> Preorder your Dashboard product from the selection below</p>
+		     <div class="col-lg-9">
+	               <p><span class="badge badge-success">Important!</span> Preorder your Dashscape product from the selection below</p>
 		     </div>
 		   </div>
 	    </div>
@@ -483,7 +486,7 @@
       <div class="well">
 	<h4 class="text-center">Partner</h4>
         <div class="row">
-          <div class="col-lg-6 col-lg-offset-4">
+          <div class="col-lg-6 col-lg-offset-3">
 	    <div class="badge badge-success">20 available
 	    </div>
           </div>
@@ -500,7 +503,7 @@
         </ul>
 	<div>
           <div class="row">
-            <div class="col-lg-6 col-lg-offset-2">
+            <div class="col-lg-6 col-lg-offset-3">
 	      <!-- Tier 3 Partner Coinbase 10 BTC Preorder button. -->
 	      <a class="coinbase-button" data-code="c2282dd547879265057ec3686b6b6877" data-button-style="custom_small" href="https://coinbase.com/checkouts/c2282dd547879265057ec3686b6b6877">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
             </div>
@@ -516,7 +519,7 @@
       <div class="well">
 	<h4 class="text-center">Angel</h4>
         <div class="row">
-          <div class="col-lg-6 col-lg-offset-4">
+          <div class="col-lg-6 col-lg-offset-3">
 	    <div class="badge badge-success">1 available
 	    </div>
           </div>
@@ -532,7 +535,7 @@
 	<div>
 	  <!-- Tier 4 Angel Coinbase 50 BTC Preorder button. -->
           <div class="row">
-            <div class="col-lg-6 col-lg-offset-2">
+            <div class="col-lg-6 col-lg-offset-1">
 	      <a class="coinbase-button" data-code="81a4d107f552799316c7f03efd59d5c8" data-button-style="custom_small" href="https://coinbase.com/checkouts/81a4d107f552799316c7f03efd59d5c8">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
             </div>
 	  </div>
