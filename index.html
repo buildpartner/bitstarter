@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+  <!-- Latest google CDN for jquery for Bootstrap 3! -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>   
+  <!--     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>  -->
   <!-- Latest compiled and minified JavaScript for Bootstrap 3! -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <!-- Fonts need to check for compatability for Bootstrap 3! -->
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -334,7 +337,7 @@
 	<!-- http://placehold.it -->
         <div class="row section1">
           <div class="col-lg-5 col-lg-offset-1 asset">
-            <img class="img-polaroid" alt="Hybrid Cloud Dashboard" src="dashboard_Base.gif">
+            <img class="img-thumbnail" alt="Hybrid Cloud Dashboard" src="dashboard_Base.gif">
           </div>
           <div class="col-lg-5 copy">
             <p class="lead">Monitor and manage cloud securely from anywhere.</p>
@@ -405,7 +408,7 @@
 	      <div class="well"
 		   <div class="row">
 		     <div class="col-lg-12">
-	               <p><span class="badge badge-success">Important!</span> Preorder your Dashscape product from the selection below</p>
+	               <p><span class="label label-success">Important!</span> Preorder your Dashscape product from the selection below</p>
 		     </div>
 		   </div>
 	    </div>
@@ -419,7 +422,7 @@
         <h4 class="text-center">Supporter</h4>
 	<div class="row">
 	  <div class="col-lg-6 col-lg-offset-3">
-	    <div class="badge badge-success">100 available
+	    <div class="label label-success">100 available
             </div>                
 	  </div>
 	</div>
@@ -453,7 +456,7 @@
 	<h4 class="text-center">Contributor</h4>
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
-	    <div class="badge badge-success">30 available
+	    <div class="label label-success">30 available
 	    </div>
           </div>
         </div>
@@ -487,7 +490,7 @@
 	<h4 class="text-center">Partner</h4>
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
-	    <div class="badge badge-success">20 available
+	    <div class="label label-success">20 available
 	    </div>
           </div>
         </div>
@@ -520,7 +523,7 @@
 	<h4 class="text-center">Angel</h4>
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
-	    <div class="badge badge-success">1 available
+	    <div class="label label-success">1 available
 	    </div>
           </div>
         </div>
@@ -730,9 +733,10 @@
 
       <!-- We put this core project under an Apache 2.0 license. -->
       <!-- Additional Modules are under seperate license with ownership and rights taken by buildpartner -->
-      <div class="row footer">
-        <div class="col-lg-12">
-          <p>Copyright &copy; 2013 buildpartner
+      <div class="container">
+	<div class="row footer">
+          <div class="col-lg-12">
+            <p>Copyright &copy; 2013 buildpartner
 	    dashscape &trade; is a Trademark of buildpartner and may not be used without permission.      
 	    Specific dashscape modules or plugins are Copyright and Licensed (&ldquo;Module License&rdquo;) seperately from the dashscape project, therefore remain the intellectual property and copyright of buildpartner and associated entities. 
 	    OpenStack APIs are Copyright &copy; 2011, 2012, 2013 OpenStack Foundation and  utilised in accordance with the OpenStack API v2.0 licensed under the Apache License, Version 2.0 (the "License").
@@ -745,9 +749,9 @@
 	     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	     See the License for the specific language governing permissions and
 	     limitations under the License.
-	  </p>
-        </div>
+	    </p>
+          </div>
+	</div>
       </div>
-    </div>
-  </body>
+</body>
 </html>
