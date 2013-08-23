@@ -273,6 +273,8 @@
 		  <div class="progress active">
 		    <div class="progess-bar progress-bar-success" style="width: 10%;"></div>
 		    <div class="progress-bar progress-bar-warning" style="width: 90%;"></div>
+		    <span class="sr-only">10% Complete (success)</span>
+		    <span class="sr-only">90% Complete (warning)</span>
 		  </div>
 		</div>
               </div>
@@ -565,14 +567,15 @@
     <div class="accordion" id="accordion2">
       <div class="accordion-group">
         <div class="accordion-heading">
-          <a class="accordion-toggle" data-toggle="collapse"
-             data-parent="#accordion2" href="#collapseOne">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
             What is cloud and what is Hybrid Cloud?
           </a>
         </div>
-        <div id="collapseOne" class="accordion-body collapse">
+        <div id="collapseOne" class="accordion-body collapse in">
           <div class="accordion-inner">
+	    <form id="form-collapseOne">
             Simply put: the future of computing. Here is a <a href="http://www.dummies.com/how-to/content/what-is-hybrid-cloud-computing.html" target="_blank">basic overview</a> which explains in plain language. Cloud incorporates many areas, where we focusing is the <a href="http://cloud.dzone.com/articles/defining-iaas-paas-and-saas" target="_blank">IaaS</a> (Infrastructure as a Service) <a	href="http://www.virtualizationpractice.com/how-do-you-define-a-hybrid-cloud-21146/" target="_blank">Hybrid Cloud</a> market specifically. Hybrid Cloud is the use of more than one public cloud provider (AWS, Rackspace, Google Compute Engine), or mixed public, private or hosted colocated environments. Hybrid cloud enables organisations (when used with the right management and orchestration interface) to dynamically and automatically migrate operating systems, applications and workloads dynamically from one provider cloud to another, usually based on cost (financial, latency, availability) and load requirements (CPU, memory, network, storage). A recent <a href="http://www.gartner.com/newsroom/id/2352816" target="_blank">Gartner report</a> forecast the IaaS market is expected to <strong>grow 47.3 percent in 2013 to $9 billion</strong>. There is also substantial forecast growth in this <a href="http://digitalmagazine.thewhir.com/i/149111/21" target="_blank">Hybrid Cloud</a> area, particularly in enabling enterprise users on mobile devices.
+	    </form>
           </div>
         </div>
       </div>
