@@ -50,11 +50,15 @@
       /* Main body headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-         background-position:center;
-         background-image:url(../dashscape-background.jpg);
-         background-attachment: fixed;
       }
-      .heading, .subheading {
+      html { 
+        background: url(../dashscape-background.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+            .heading, .subheading {
        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
        text-align: center;
        font-size: 48px;
