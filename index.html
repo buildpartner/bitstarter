@@ -48,27 +48,11 @@
       /* All form factors */
 
       /* Main body headings */
-      .translucent {
-        opacity: 0.4;
-        filter: alpha(opacity = 40); /* For IE */
-      }
-      #container {
-        position: relative;
-        width: 200px;
-        height: 200px;
-      }
-      #background, #content {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      #background {
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
         background-position:center;
         background-image:url(../dashscape-background.jpg);
         background-attachment: fixed;
-      }
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -224,10 +208,6 @@
           </div><!--/.nav-collapse -->
         </div>
       </div>
-<div id="container">
-    <div id="background" class="translucent"></div>
-    <div id="content">
-
       <!-- We use row-fluid inside containers to achieve a resizable layout. -->
       <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
       <!-- http://stackoverflow.com/a/12270322 -->
@@ -781,8 +761,5 @@
           </div>
 	</div>
       </div>
-</div>
-</div>
-
 </body>
 </html>
