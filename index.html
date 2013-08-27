@@ -48,14 +48,18 @@
       /* All form factors */
 
       /* Main body headings */
-      body {
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-        background-image:url(../dashscape-background1920crop.jpg);
+      .background-image {
+        background-image: url(../dashscape-background1920crop.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
         background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+      }
+      body {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -215,6 +219,7 @@
       <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
       <!-- http://stackoverflow.com/a/12270322 -->
       <div class="container">
+<div class="col-lg-12 background-image"></div>
 	<!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
 	<!-- www.google.com/fonts/specimen/Ubuntu -->
 	<!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
