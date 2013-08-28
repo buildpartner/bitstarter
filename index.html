@@ -18,12 +18,16 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-
+      body {
+       padding-top: 60px;
+      }
+      @media (max-width: 979px) {
+      body {
+        padding-top: 0px;
+      }
+     }
       /* Large desktop */
       @media (min-width: 980px) {
-        body {
-         padding-top: 40px;
-        }
        .linediv-l {
          border-right: 1px white solid;
        }
@@ -34,9 +38,6 @@
 
       /* Landscape phones and down */
       @media (max-width: 480px) {
-        body {
-         padding-top: 0px;
-        }
        .copy {
          padding: 2.5% 10%;
        }
